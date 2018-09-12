@@ -1,4 +1,11 @@
-h1{
-  font-family: Quattrocento;
-  font-weight:400;
+@fontface{
+font-family: "MarianText";
+src: url("../fonts/MarianText-1554Italic.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+span{
+  font-family: MarianText;
+  color: pink;
 }
