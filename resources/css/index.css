@@ -80,15 +80,19 @@ p{
 }
 
 
-.romantwo{
-  transition: font-size 2s ease-in-out;
-}
+
 
 .romantwo:hover{
-  font-family:italic;
-  font-style:italic;
+  font-family:black;
+  font-style:normal;
+  color:red;
+  font-size:0.88rem;
+}
+
+.romanthree:hover{
+  font-family:black;
+  font-style:normal;
   color:cyan;
-  font-size:1.3rem;
 }
 
 .black{
