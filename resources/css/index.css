@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MarianText-1757Italic';
+  font-family: 'italic';
   src: url('../fonts/MarianText-1757Italic.eot');
   src: url('../fonts/MarianText-1757Italic.woff2') format('woff2'),
        url('../fonts/MarianText-1757Italic.woff') format('woff'),
@@ -11,7 +11,7 @@
 }
 
 @font-face{
-  font-family: 'MarianText-1757Roman';
+  font-family: 'roman';
   src: url('../fonts/MarianText-1757Roman.eot');
   src: url('../fonts/MarianText-1757Roman.woff2') format('woff2'),
        url('../fonts/MarianText-1757Roman.woff') format('woff'),
@@ -35,16 +35,65 @@
 }
 
 html{
-  font-family: MarianText-1757Roman;
+  margin: 0 auto;
+  padding: 8% 14%;
+  font-family: roman;
   font-style: normal;
-  line-height: 1.5;
+  font-size:60px;
+  line-height: 1.4;
 }
 
 p{
   cursor: pointer;
 }
 
-span:hover{
+p #top{
+  line-height:2px;
+}
+
+
+/*
+.roman:link{
+  color:pink;
+}
+
+.roman:active{
+  font-family:black;
+}
+.roman:visited{
+  font-family:black;
+}
+*/
+
+.roman{
+  transition: color ease-out;
+}
+
+.roman:hover{
   font-family:black;
   font-style: normal;
+  font-size:0.9rem;
+  color:blue;
+}
+
+.black{
+  font-family:black;
+  font-style: normal;
+}
+
+/*.black:hover{
+  font-family:roman;
+  font-style:normal;
+} */
+
+
+
+.italic{
+  font-family:italic;
+  font-style:italic;
+  transition: color 1s ease-out;
+}
+
+.italic:hover{
+  color:pink;
 }
