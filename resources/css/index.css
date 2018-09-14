@@ -65,6 +65,8 @@ p{
 }
 */
 
+
+
 .roman{
   transition: color ease-out;
 }
@@ -107,17 +109,20 @@ p{
   transition: color 1s ease-out, font-size 4s ease;
 }
 
+
 .sub{
   font-family:italic;
   font-style:italic;
-  transition: all 1s ease-out;
+  transition: all 5s ease-out;
   display:block;
 }
 
+/*
 .sub:hover{
-  line-height: 3;
+  line-height: 2;
   color:#69FFFB;
 }
+*/
 
 .italic:hover{
   color:pink;
