@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'MarianText-1554Italic';
+  src: url('MarianText-1554Italic.eot');
+  src: url('MarianText-1554Italic.woff2') format('woff2'),
+       url('MarianText-1554Italic.woff') format('woff'),
+       url('MarianText-1554Italic.ttf') format('truetype'),
+       url('MarianText-1554Italic.svg#MarianText-1554Italic') format('svg'),
+       url('MarianText-1554Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

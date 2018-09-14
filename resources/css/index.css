@@ -1,11 +1,50 @@
-@fontface{
-font-family: "MarianText";
-src: url("../fonts/MarianText-1554Italic.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
+@font-face {
+  font-family: 'MarianText-1757Italic';
+  src: url('../fonts/MarianText-1757Italic.eot');
+  src: url('../fonts/MarianText-1757Italic.woff2') format('woff2'),
+       url('../fonts/MarianText-1757Italic.woff') format('woff'),
+       url('../fonts/MarianText-1757Italic.ttf') format('truetype'),
+       url('../fonts/MarianText-1757Italic.svg#MarianText-1757Italic') format('svg'),
+       url('../fonts/MarianText-1757Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: italic;
 }
 
-span{
-  font-family: MarianText;
-  color: pink;
+@font-face{
+  font-family: 'MarianText-1757Roman';
+  src: url('../fonts/MarianText-1757Roman.eot');
+  src: url('../fonts/MarianText-1757Roman.woff2') format('woff2'),
+       url('../fonts/MarianText-1757Roman.woff') format('woff'),
+       url('../fonts/MarianText-1757Roman.ttf') format('truetype'),
+       url('../fonts/MarianText-1757Roman.svg#MarianText-1757Italic') format('svg'),
+       url('../fonts/MarianText-1757Roman.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'black';
+  src: url('../fonts/MarianText-Black.eot');
+  src: url('../fonts/MarianText-Black.woff2') format('woff2'),
+       url('../fonts/MarianText-Black.woff') format('woff'),
+       url('../fonts/MarianText-Black.ttf') format('truetype'),
+       url('../fonts/MarianText-Black.svg#MarianText-1757Italic') format('svg'),
+       url('../fonts/MarianText-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  font-family: MarianText-1757Roman;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+p{
+  cursor: pointer;
+}
+
+span:hover{
+  font-family:black;
+  font-style: normal;
 }
