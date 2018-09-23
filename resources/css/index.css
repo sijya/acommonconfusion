@@ -1,3 +1,40 @@
+/*font style sheet*/
+
+.italic{
+  font-family:italic;
+  font-style:italic;
+  transition: color 2s ease-out;
+}
+
+
+.italic:hover{
+  color:pink;
+}
+
+.black{
+  font-family:black;
+  font-style: normal;
+}
+
+.black:hover{
+  font-family:roman;
+  font-style:normal;
+}
+
+
+.roman{
+  transition: color ease-out;
+}
+
+.roman:hover{
+  font-family:black;
+  font-style: normal;
+  font-size:0.88em;
+  /*font-size:1.2rem;*/
+  color:blue;
+}
+
+
 /*fonts*/
 
 @font-face {
@@ -37,41 +74,6 @@
   font-size: 0.9rem;
 }
 
-/*font style sheet*/
-
-.italic{
-  font-family:italic;
-  font-style:italic;
-  transition: color 2s ease-out;
-}
-
-
-.italic:hover{
-  color:pink;
-}
-
-.black{
-  font-family:black;
-  font-style: normal;
-}
-
-.black:hover{
-  font-family:roman;
-  font-style:normal;
-}
-
-
-.roman{
-  transition: color ease-out;
-}
-
-.roman:hover{
-  font-family:black;
-  font-style: normal;
-  font-size:0.88em;
-  /*font-size:1.2rem;*/
-  color:blue;
-}
 
 
 /*common base */
@@ -104,7 +106,7 @@ body{
 header{
   display:flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   /*background-color: red;*/
 }
 
@@ -123,7 +125,7 @@ transition: letter-spacing 14s ease-out 100ms, color 5s ease;
 }
 
 header p.title:hover{
-  letter-spacing: -10px;
+  letter-spacing: 3px;
   color:red;
 }
 
@@ -136,7 +138,7 @@ header .credits{
 header .credits .name{
   font-family:italic;
   font-style:italic;
-  transition: all 500ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .muir:hover{
@@ -150,19 +152,55 @@ header .credits .name{
   color: peachpuff;
 }
 
-/*body*/
+/*main*/
+main {
+  margin-top:30%;
+  text-align: center;
+  margin: 30% auto 0 auto;
+}
 
-/* body-introduction */
+/*main-introduction */
 
-/* body-introduction-acommonconfusion */
+/*main-acommonconfusion */
 
-body .introduction .acommonconfusion span{
+
+main .introduction .acommonconfusion span{
+  font-family:black;
+  font-style: normal;
+  transition: letter-spacing 1s ease-out, margin-left 1s ease-out, color 0;
+}
+
+
+main .introduction .acommonconfusion span:hover{
+  font-family:roman;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-left: 1px;
+  color:red;
+
+}
+
+
+/*main-franzkafka*/
+
+main .introduction .franzkafka span{
   font-family:black;
   font-style: normal;
 }
 
+main .introduction .franz, main .introduction .kafka{
+  transition: all 2s ease-out;
+}
 
-body .introduction .acommonconfusion span:hover{
-  font-family:roman;
-  font-style: normal;
+main .introduction .franz:hover{
+  letter-spacing: 10px;
+  margin-left:20px;
+  margin-right:10px;
+}
+
+
+main .introduction .kafka:hover{
+  letter-spacing: 10px;
+  margin-left:20px;
+  margin-right:10px;
 }
