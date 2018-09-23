@@ -1,3 +1,5 @@
+/*fonts*/
+
 @font-face {
   font-family: 'italic';
   src: url('../fonts/MarianText-1757Italic.eot');
@@ -35,36 +37,28 @@
   font-size: 0.9rem;
 }
 
-html{
-  margin: 0 auto;
-  padding: 8% 14% 8% 18%;
-  font-family: roman;
-  font-style: normal;
-  font-size:80px;
-  line-height: 1.4;
-  color:white;
-  background-color:black;
-}
+/*font style sheet*/
 
-p{
-  cursor: pointer;
+.italic{
+  font-family:italic;
+  font-style:italic;
+  transition: color 2s ease-out;
 }
 
 
-
-/*
-.roman:link{
+.italic:hover{
   color:pink;
 }
 
-.roman:active{
+.black{
   font-family:black;
+  font-style: normal;
 }
-.roman:visited{
-  font-family:black;
-}
-*/
 
+.black:hover{
+  font-family:roman;
+  font-style:normal;
+}
 
 
 .roman{
@@ -74,61 +68,101 @@ p{
 .roman:hover{
   font-family:black;
   font-style: normal;
-  font-size:0.88rem;
+  font-size:0.88em;
   /*font-size:1.2rem;*/
   color:blue;
 }
 
 
+/*common base */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  margin: 0 auto;
+  font-family: roman;
+  font-style: normal;
+  font-size:24px;
+  line-height: 1.2;
+  color:black;
+  background-color:white;
+}
+
+body{
+  margin: 18% 22%;
+  cursor: pointer;
+}
 
 
-.romantwo:hover{
-  font-family:black;
-  font-style:normal;
+/*header */
+
+/*header-project*/
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /*background-color: red;*/
+}
+
+header p.author{
+  font-family:italic;
+  font-style:italic;
+  transition: color 2s ease-out;
+}
+
+header p.author:hover{
+color: white;
+}
+
+header p.title{
+transition: letter-spacing 14s ease-out 100ms, color 5s ease;
+}
+
+header p.title:hover{
+  letter-spacing: -10px;
   color:red;
-  font-size:0.88rem;
 }
 
-.romanthree:hover{
-  font-family:black;
-  font-style:normal;
-  color:cyan;
+/*header-credits*/
+
+header .credits{
+  font-size: 0.6rem;
 }
 
-.black{
+header .credits .name{
+  font-family:italic;
+  font-style:italic;
+  transition: all 500ms ease-out;
+}
+
+.muir:hover{
+  color:turquoise;
+}
+.marian:hover{
+  color:pink;
+}
+
+.sijya:hover{
+  color: peachpuff;
+}
+
+/*body*/
+
+/* body-introduction */
+
+/* body-introduction-acommonconfusion */
+
+body .introduction .acommonconfusion span{
   font-family:black;
   font-style: normal;
 }
 
-/*.black:hover{
+
+body .introduction .acommonconfusion span:hover{
   font-family:roman;
-  font-style:normal;
-} */
-
-
-
-.italic{
-  font-family:italic;
-  font-style:italic;
-  transition: color 1s ease-out, font-size 4s ease;
-}
-
-
-.sub{
-  font-family:italic;
-  font-style:italic;
-  transition: all 5s ease-out;
-  display:block;
-}
-
-/*
-.sub:hover{
-  line-height: 2;
-  color:#69FFFB;
-}
-*/
-
-.italic:hover{
-  color:pink;
-  font-size:2rem;
+  font-style: normal;
 }
