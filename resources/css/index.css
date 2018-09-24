@@ -202,7 +202,6 @@ main .introduction .franzkafka:hover{
 main .introduction .franzkafka span{
   font-family:black;
   font-style: normal;
-  background-color: pink;
   padding-top:1%;
   padding-bottom:1%;
 }
@@ -237,7 +236,7 @@ main .experience .black {
 }
 
 main .experience .lines{
-  text-align: left;
+  text-align: center;
   display:block;
   background-color: orange;
 }
@@ -246,32 +245,43 @@ main .experience .line{
   background-color: pink;
 }
 
-main .experience .line:hover{
-  color:white;
+main .experience .even, main .experience .odd{
+  transition: margin 3s ease-out;
+}
+
+main .experience .even:hover{
+margin-left:30%;
+color:red;
+  /*background-color: maroon;*/
+}
+
+main .experience .odd:hover{
+margin-left:0%;
+color:red;
   /*background-color: maroon;*/
 }
 
 main .experience .lineone {
 display: inline-block;
-margin-left:10%;
+margin-left:0%;
 }
 
 main .experience .linetwo {
 display: inline-block;
-margin-left:20%;
+margin-left:10%;
 }
 
 main .experience .linethree {
 display: inline-block;
 background-color: pink;
-margin-left:30%;
+margin-left:20%;
 /*padding:0.3%;*/
 }
 
 main .experience .linefour {
 display: inline-block;
 background-color: pink;
-margin-left:40%;
+margin-left:30%;
 }
 
 
@@ -286,9 +296,10 @@ main .letter {
 
 main .letter .A{
   background-color: pink;
-transition: all 5s ease 300ms;
+  transition: color 3s ease-out ;
 
 }
 main .letter .A:hover{
-  font-size:24rem;
+  /*font-size:24rem;*/
+  color: seagreen;
 }
