@@ -3,12 +3,12 @@
 .italic{
   font-family:italic;
   font-style:italic;
-  transition: color 2s ease-out;
+  /*transition: color 2s ease-out;*/
 }
 
 
 .italic:hover{
-  color:pink;
+  /*color:pink;*/
 }
 
 .black{
@@ -153,9 +153,8 @@ header .credits .name{
 
 /*main*/
 main {
-  margin-top:30%;
   text-align: center;
-  margin: 30% auto 0 auto;
+  margin: 10% auto 0 auto;
 }
 
 /*main-introduction */
@@ -163,7 +162,9 @@ main {
 /*main-acommonconfusion */
 
 main .introduction {
+  padding-top:14%;
   font-size:0.7rem;
+  background-color: maroon;
 }
 
 
@@ -187,7 +188,10 @@ main .introduction .acommonconfusion span:hover{
 /*main-franzkafka*/
 
 main .introduction .franzkafka {
-  font-size: 0.8em;
+  margin-top:10%;
+  font-size: 0.9em;
+  background-color: teal;
+  display: inline-block;
 }
 
 main .introduction .franzkafka span{
@@ -220,16 +224,41 @@ main .experience{
   font-size: 0.7rem;
 }
 
-main .experience .lines{
-  text-align: left;
-  background-color: pink;
-  display:inline-block;
-}
-
 main .experience .black {
   font-size: 0.88em;
 }
 
-main .experience .line{
+main .experience .lines{
+  text-align: left;
+  display:block;
+  background-color: orange;
+}
 
+main .experience .line:hover{
+  color:white;
+}
+
+main .experience .lineone {
+display: inline-block;
+background-color: pink;
+margin-left:10%;
+}
+
+main .experience .linetwo {
+display: inline-block;
+background-color: pink;
+margin-left:20%;
+}
+
+main .experience .linethree {
+display: inline-block;
+background-color: pink;
+margin-left:30%;
+/*padding:0.3%;*/
+}
+
+main .experience .linefour {
+display: inline-block;
+background-color: pink;
+margin-left:40%;
 }
