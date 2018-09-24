@@ -14,6 +14,7 @@
 .black{
   font-family:black;
   font-style: normal;
+  font-size: 0.88em;
 }
 
 .black:hover{
@@ -31,7 +32,6 @@
   font-style: normal;
   font-size:0.88em;
   /*font-size:1.2rem;*/
-  color:blue;
 }
 
 
@@ -71,7 +71,6 @@
        url('../fonts/MarianText-Black.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
-  font-size: 0.9rem;
 }
 
 
@@ -94,7 +93,7 @@ html{
 }
 
 body{
-  margin: 18% 22%;
+  margin: 15% 22%;
   cursor: pointer;
 }
 
@@ -163,6 +162,10 @@ main {
 
 /*main-acommonconfusion */
 
+main .introduction {
+  font-size:0.7rem;
+}
+
 
 main .introduction .acommonconfusion span{
   font-family:black;
@@ -182,6 +185,10 @@ main .introduction .acommonconfusion span:hover{
 
 
 /*main-franzkafka*/
+
+main .introduction .franzkafka {
+  font-size: 0.8em;
+}
 
 main .introduction .franzkafka span{
   font-family:black;
@@ -203,4 +210,26 @@ main .introduction .kafka:hover{
   letter-spacing: 10px;
   margin-left:20px;
   margin-right:10px;
+}
+
+
+/*First line*/
+
+main .experience{
+  margin-top:10%;
+  font-size: 0.7rem;
+}
+
+main .experience .lines{
+  text-align: left;
+  background-color: pink;
+  display:inline-block;
+}
+
+main .experience .black {
+  font-size: 0.88em;
+}
+
+main .experience .line{
+
 }
