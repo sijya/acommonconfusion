@@ -189,31 +189,39 @@ main .introduction .acommonconfusion span:hover{
 
 main .introduction .franzkafka {
   margin-top:10%;
-  font-size: 0.9em;
-  background-color: teal;
+  font-size: 0.8em;
+  background-color: seagreen;
   display: inline-block;
+  color:blue;
+}
+
+main .introduction .franzkafka:hover{
+  /*color:darkblue;*/
 }
 
 main .introduction .franzkafka span{
   font-family:black;
   font-style: normal;
+  background-color: pink;
+  padding-top:1%;
+  padding-bottom:1%;
 }
 
 main .introduction .franz, main .introduction .kafka{
-  transition: all 2s ease-out;
+  transition: letter-spacing 2s ease-out, padding 2s ease-out;
 }
 
 main .introduction .franz:hover{
   letter-spacing: 10px;
-  margin-left:20px;
-  margin-right:10px;
+  padding-left:20px;
+  padding-right:10px;
 }
 
 
 main .introduction .kafka:hover{
   letter-spacing: 10px;
-  margin-left:20px;
-  margin-right:10px;
+  padding-left:20px;
+  padding-right:10px;
 }
 
 
@@ -234,19 +242,22 @@ main .experience .lines{
   background-color: orange;
 }
 
+main .experience .line{
+  background-color: pink;
+}
+
 main .experience .line:hover{
   color:white;
+  /*background-color: maroon;*/
 }
 
 main .experience .lineone {
 display: inline-block;
-background-color: pink;
 margin-left:10%;
 }
 
 main .experience .linetwo {
 display: inline-block;
-background-color: pink;
 margin-left:20%;
 }
 
@@ -261,4 +272,23 @@ main .experience .linefour {
 display: inline-block;
 background-color: pink;
 margin-left:40%;
+}
+
+
+/*A*/
+
+main .letter {
+  background-color: blue;
+  height:100%;
+  font-size: 28rem;
+
+}
+
+main .letter .A{
+  background-color: pink;
+transition: all 5s ease 300ms;
+
+}
+main .letter .A:hover{
+  font-size:24rem;
 }
