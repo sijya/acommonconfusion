@@ -164,9 +164,12 @@ main {
 main .introduction {
   padding-top:14%;
   font-size:0.7rem;
-  background-color: maroon;
+  display:block;
 }
 
+main .introduction .acommonconfusion{
+  display:inline-block;
+}
 
 main .introduction .acommonconfusion span{
   font-family:black;
@@ -189,10 +192,10 @@ main .introduction .acommonconfusion span:hover{
 
 main .introduction .franzkafka {
   margin-top:10%;
-  font-size: 0.8em;
-  background-color: seagreen;
+  font-size: 0.9em;
+  background-color: black;
   display: inline-block;
-  color:blue;
+  color:maroon;
 }
 
 main .introduction .franzkafka:hover{
@@ -236,70 +239,63 @@ main .experience .black {
 }
 
 main .experience .lines{
+  font-size: 0.9em;
   text-align: center;
   display:block;
-  background-color: orange;
+  background-color:white;
+  /*background-color: orange;*/
 }
 
 main .experience .line{
-  background-color: pink;
+  transition: color 200ms ease-out;
 }
 
-main .experience .even, main .experience .odd{
-  transition: margin 3s ease-out;
-}
 
-main .experience .even:hover{
-margin-left:30%;
+main .experience .line:hover{
 color:red;
-  /*background-color: maroon;*/
 }
 
-main .experience .odd:hover{
-margin-left:0%;
-color:red;
-  /*background-color: maroon;*/
-}
+
 
 main .experience .lineone {
-display: inline-block;
-margin-left:0%;
-}
-
-main .experience .linetwo {
 display: inline-block;
 margin-left:10%;
 }
 
+main .experience .linetwo {
+display: inline-block;
+margin-left:20%;
+}
+
 main .experience .linethree {
 display: inline-block;
-background-color: pink;
-margin-left:20%;
+margin-left:30%;
 /*padding:0.3%;*/
 }
 
 main .experience .linefour {
 display: inline-block;
-background-color: pink;
-margin-left:30%;
+margin-left:40%;
 }
 
 
 /*A*/
 
 main .letter {
-  background-color: blue;
   height:100%;
-  font-size: 28rem;
-
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .letter .A{
-  background-color: pink;
-  transition: color 3s ease-out ;
+  font-size: 28rem;
+  transition: font-size 3s ease-out;
+}
 
-}
+
 main .letter .A:hover{
-  /*font-size:24rem;*/
-  color: seagreen;
 }
+
+/**/
