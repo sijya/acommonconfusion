@@ -89,7 +89,7 @@ html{
   font-family: roman;
   font-style: normal;
   font-size:24px;
-  color:black;
+  color:darkgrey;
   background-color: lightgrey;
 }
 
@@ -158,30 +158,30 @@ main {
 .title-box{
   display:inline-flex;
   flex-direction: column;
-  width:35%;
+  justify-content: center;
+  align-items: center;
+  width:55%;
   margin:0 auto;
   text-align: center;
   font-size: 0.75rem;
   transition: background-color 1s ease-in;
   background-color: pink;
-padding:10% 12%;
-
 }
 
 .title-box:hover{
-
+  color:darkgrey;
+  background-color: mistyrose;
 }
 
  p.title{
    color:white;
-   padding:1%;
-   padding-bottom:30%;
    transition: letter-spacing 5s ease-out 100ms, color 3s ease;
+   width:100%;
 }
 
  p.title:hover{
   letter-spacing:2px;
-  color:white;
+  color:darkgrey;
 }
 
 /*introduction-author */
@@ -203,7 +203,7 @@ padding:10% 12%;
 }
 
  p.author:hover{
-color: white;
+   color: white;
 }
 
 /*introduction-acommonconfusion */
@@ -212,17 +212,22 @@ color: white;
 .introduction .acommonconfusion{
   display:inline-block;
   width:40%;
-  margin-bottom: 5%;
-  background-color: lemonchiffon;
+  margin-bottom:3rem;
+  color:white;
+  background-color: #EFEED0;
   padding:10%;
   font-size:0.4rem;
+  transition: all 1s ease;
+}
 
+.introduction .acommonconfusion:hover{
+  color:darkgrey;
+  background-color: #FFFFF0	;
 }
 
 .introduction .acommonconfusion span{
   font-family:black;
   font-style: normal;
-  color:black;
   transition: letter-spacing 1s ease-out, margin-left 1s ease-out, color 0;
 }
 
@@ -232,7 +237,6 @@ color: white;
   font-style: normal;
   letter-spacing: 1px;
   margin-left: 1px;
-  color:black;
 }
 
 
@@ -241,12 +245,15 @@ color: white;
 
 .introduction .franzkafka {
   display: inline-block;
-  color:black;
+  color:white;
   background-color: peachpuff;
+  transition: all 1s ease;
 
 }
 
 .introduction .franzkafka:hover{
+  background-color: #FFE5CF;
+  color:darkgrey;
   /*color:red;*/
 }
 
@@ -262,7 +269,6 @@ color: white;
 
 .introduction .franz, .introduction .kafka{
   transition: letter-spacing 2s ease-out, padding 2s ease-out;
-  color:black;
 }
 
 .introduction .franz:hover, .introduction .kafka:hover{
@@ -271,7 +277,6 @@ color: white;
   padding-right:10px;
   font-family:roman;
   font-style: normal;
-  color:black;
 }
 
 
@@ -279,7 +284,7 @@ color: white;
 /*section-two*/
 
 .section-two{
-  padding-top: 10%;
+  padding-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +295,7 @@ color: white;
 
 .experience{
   display:flex;
-  margin-bottom:5rem;
+  margin-bottom:3rem;
   width:85%;
 }
 
@@ -315,18 +320,20 @@ color: white;
 
 .experience .lines{
   background-color: aquamarine;
-  font-size: 0.4em;
-  width:40%;
+  font-size: 0.6em;
+  width:60%;
   padding:5% 5% 5% 1%;
   text-align: center;
   display:block;
   margin: 0 auto;
   position: relative;
-
-
+transition: all 1s ease;
   /*background-color: orange;*/
 }
 
+.experience .lines:hover{
+background-color: #CCFFED;
+}
 
 .experience .lineone {
 display: inline-block;
@@ -351,12 +358,16 @@ margin-left:20%;
 
 
 .experience .line{
- transition: color 200ms ease-out;
+ transition: all 500ms ease-out;
+ color:white;
+
 }
 
 
 .experience .line:hover{
 margin-left:40%;
+color:darkgrey;
+
 }
 
 /*transition*/
@@ -384,6 +395,10 @@ margin-left:40%;
   display: block;
   width:100%;
   margin-bottom: 3rem;
+}
+
+.letter-outer-box:hover{
+  background-color: #F4AEBD;
 }
 
 .letter-box{
@@ -416,17 +431,25 @@ margin-left:40%;
 
 .transact{
   text-align: left;
-  width:30%;
+  width:40%;
   background-color: peachpuff;
   padding:20% 20% 20% 25%;
   margin-bottom: 2rem;
+  transition: all 1s ease;
 }
 
+.transact:hover{
+  background-color: #FFE5CF;
+}
 .goes{
   width:30%;
   text-align: left;
   width:50%;
-  background-color: lavender;
+  background-color:  #CFD7E5;
   padding:30% 30% 30% 36%;
 }
 /**/
+
+.goes:hover{
+  background-color:lavender;
+}
