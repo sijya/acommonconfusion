@@ -94,6 +94,7 @@ html{
 
 body{
   margin: 3% auto;
+  width:85%;
   cursor: pointer;
 }
 
@@ -147,7 +148,7 @@ main {
   line-height: 0.92;
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
 }
 
 /*introduction-title */
@@ -209,7 +210,6 @@ main {
   font-style:italic;
   font-size:0.9rem;
   transition: color 2s ease-out;
-padding-top:20%;
 }
 
  p.author:hover{
@@ -249,13 +249,16 @@ color: white;
   font-style: normal;
 }
 
+/*section-two*/
 
+.section-two{
+  padding-top: 10%;
+}
 
 /*experience*/
 
 .experience{
   font-size: 0.7rem;
-  padding-top:3%;
   padding-bottom:3%;
   display:flex;
   flex-direction: column;
@@ -263,13 +266,12 @@ color: white;
   justify-content: center;
 }
 
-/*section-two*/
 
 
 /*experience-para*/
 
 .experience .para{
-  padding: 10%;
+  padding:5%;
 }
 
 
