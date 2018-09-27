@@ -14,12 +14,13 @@
 .black{
   font-family:black;
   font-style: normal;
-  font-size: 0.88em;
 }
 
 .black:hover{
+  /*
   font-family:roman;
   font-style:normal;
+  */
 }
 
 
@@ -28,10 +29,11 @@
 }
 
 .roman:hover{
+  /*
   font-family:black;
   font-style: normal;
-  font-size:0.88em;
-  /*font-size:1.2rem;*/
+  /*font-size:1.2rem;
+  */
 }
 
 
@@ -87,69 +89,46 @@ html{
   font-family: roman;
   font-style: normal;
   font-size:24px;
-  line-height: 1.2;
   color:black;
-  background-color:white;
 }
 
 body{
-  margin: 15% 22%;
+  margin: 10% 10%;
   cursor: pointer;
 }
 
 
 /*header */
-
 /*header-project*/
-
+/*
 header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  /*background-color: red;*/
-}
+/*background-color: red;
+)*/
 
-header p.author{
-  font-family:italic;
-  font-style:italic;
-  transition: color 2s ease-out;
-}
 
-header p.author:hover{
-color: white;
-}
-
-header p.title{
-transition: letter-spacing 14s ease-out 100ms, color 5s ease;
-}
-
-header p.title:hover{
-  letter-spacing: 3px;
-  color:red;
-}
-
-/*header-credits*/
-
+/*header-credits
 header .credits{
   font-size: 0.6rem;
 }
-
 header .credits .name{
   font-family:italic;
   font-style:italic;
   transition: all 300ms ease-out;
 }
-
 .muir:hover{
   color:turquoise;
 }
 .marian:hover{
   color:pink;
 }
-
 .sijya:hover{
   color: peachpuff;
 }
+*/
+
 
 /*main*/
 main {
@@ -157,145 +136,207 @@ main {
   margin: 10% auto 0 auto;
 }
 
-/*main-introduction */
 
-/*main-acommonconfusion */
 
-main .introduction {
-  padding-top:14%;
-  font-size:0.7rem;
+
+/*introduction */
+
+
+/*introduction-title */
+
+.title-box{
+  width:40%;
+  margin:0 auto;
+  padding-bottom:5%;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+ p.title{
+   padding:1%;
+   transition: letter-spacing 14s ease-out 100ms, color 3s ease;
+}
+
+ p.title:hover{
+  letter-spacing: 4px;
+  color:red;
+}
+
+/*introduction-acommonconfusion */
+
+.introduction {
+  font-size:0.75rem;
+  line-height: 0.92;
   display:block;
 }
 
-main .introduction .acommonconfusion{
+.introduction .acommonconfusion{
   display:inline-block;
+  width:60%;
 }
 
-main .introduction .acommonconfusion span{
+.introduction .acommonconfusion span{
   font-family:black;
   font-style: normal;
   transition: letter-spacing 1s ease-out, margin-left 1s ease-out, color 0;
 }
 
 
-main .introduction .acommonconfusion span:hover{
+.introduction .acommonconfusion span:hover{
   font-family:roman;
   font-style: normal;
   letter-spacing: 1px;
   margin-left: 1px;
-  color:red;
-
+  color:black;
 }
 
+/*introduction-author */
 
-/*main-franzkafka*/
+.author-box{
+  width:50%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-main .introduction .franzkafka {
-  margin-top:10%;
-  font-size: 0.9em;
-  background-color: black;
+ p.author{
+  font-family:italic;
+  font-style:italic;
+  font-size:0.9rem;
+  transition: color 2s ease-out;
+  padding:5%;
+}
+
+ p.author:hover{
+color: white;
+}
+
+/*introduction-franzkafka*/
+
+.introduction .franzkafka {
+  font-size: 1em;
+  padding-top:12%;
+    padding-bottom:12%;
   display: inline-block;
-  color:maroon;
+  color:black;
 }
 
-main .introduction .franzkafka:hover{
-  /*color:darkblue;*/
+.introduction .franzkafka:hover{
+  /*color:red;*/
 }
 
-main .introduction .franzkafka span{
+.introduction .franzkafka p{
+  line-height: 0.9;
+}
+
+.introduction .franzkafka span{
   font-family:black;
   font-style: normal;
-  padding-top:1%;
-  padding-bottom:1%;
 }
 
-main .introduction .franz, main .introduction .kafka{
+.introduction .franz, main .introduction .kafka{
   transition: letter-spacing 2s ease-out, padding 2s ease-out;
 }
 
-main .introduction .franz:hover{
+.introduction .franz:hover, .introduction .kafka:hover{
   letter-spacing: 10px;
   padding-left:20px;
   padding-right:10px;
+  font-family:roman;
+  font-style: normal;
 }
 
 
-main .introduction .kafka:hover{
-  letter-spacing: 10px;
-  padding-left:20px;
-  padding-right:10px;
-}
 
+/*experience*/
 
-/*First line*/
-
-main .experience{
-  margin-top:10%;
+.experience{
   font-size: 0.7rem;
 }
 
-main .experience .black {
-  font-size: 0.88em;
+
+/*experience-para*/
+
+.experience .para{
+  margin-bottom:5%;
 }
 
-main .experience .lines{
+
+/*experience-lines*/
+
+.experience .lines{
   font-size: 0.9em;
+  width:50%;
   text-align: center;
   display:block;
-  background-color:white;
+  margin: 0 auto;
+  position: relative;
+  left:-5%;
+  margin-bottom:5%;
+
   /*background-color: orange;*/
 }
 
-main .experience .line{
+ .experience .line{
   transition: color 200ms ease-out;
 }
 
 
-main .experience .line:hover{
+.experience .line:hover{
 color:red;
 }
 
 
+.experience .lineone {
+display: inline-block;
+margin-left:5%;
+}
 
-main .experience .lineone {
+ .experience .linetwo {
 display: inline-block;
 margin-left:10%;
 }
 
-main .experience .linetwo {
+.experience .linethree {
+display: inline-block;
+margin-left:15%;
+/*padding:0.3%;*/
+}
+
+.experience .linefour {
 display: inline-block;
 margin-left:20%;
 }
 
-main .experience .linethree {
-display: inline-block;
-margin-left:30%;
-/*padding:0.3%;*/
+
+/*letter*/
+
+.letter-box{
+  text-align: left;
+  font-size: 1.5rem;
+  padding-bottom:5%;
+  padding-top:5%;
+  display:block;
+  margin-left: 30%;
+  transition: all 3s ease-out;
 }
 
-main .experience .linefour {
-display: inline-block;
-margin-left:40%;
+
+.letter-box:hover{
+  margin-left:70%;
 }
 
+/*para*/
 
-/*A*/
+.para{
+  font-size: 0.7rem;
+}
 
-main .letter {
-  height:100%;
+.goes{
+  width:30%;
   margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  line-height: 1.2;
 }
-
-main .letter .A{
-  font-size: 28rem;
-  transition: font-size 3s ease-out;
-}
-
-
-main .letter .A:hover{
-}
-
 /**/
