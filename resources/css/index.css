@@ -93,7 +93,7 @@ html{
 }
 
 body{
-  margin: 10% 10%;
+  margin: 3% auto;
   cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ header .credits .name{
 /*main*/
 main {
   text-align: center;
-  margin: 10% auto 0 auto;
+  margin: 0 auto;
 }
 
 
@@ -142,13 +142,21 @@ main {
 /*introduction */
 
 
+.introduction {
+  font-size:0.75rem;
+  line-height: 0.92;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*introduction-title */
 
 .title-box{
-  width:40%;
+  display:inline;
+  width:20%;
   margin:0 auto;
-  padding-bottom:5%;
-  text-align: right;
+  text-align: center;
   font-size: 0.75rem;
 }
 
@@ -164,11 +172,6 @@ main {
 
 /*introduction-acommonconfusion */
 
-.introduction {
-  font-size:0.75rem;
-  line-height: 0.92;
-  display:block;
-}
 
 .introduction .acommonconfusion{
   display:inline-block;
@@ -196,8 +199,9 @@ main {
   width:50%;
   margin:0 auto;
   display:flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
 }
 
  p.author{
@@ -205,7 +209,7 @@ main {
   font-style:italic;
   font-size:0.9rem;
   transition: color 2s ease-out;
-  padding:5%;
+padding-top:20%;
 }
 
  p.author:hover{
@@ -216,8 +220,6 @@ color: white;
 
 .introduction .franzkafka {
   font-size: 1em;
-  padding-top:12%;
-    padding-bottom:12%;
   display: inline-block;
   color:black;
 }
@@ -253,13 +255,21 @@ color: white;
 
 .experience{
   font-size: 0.7rem;
+  padding-top:3%;
+  padding-bottom:3%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+/*section-two*/
 
 
 /*experience-para*/
 
 .experience .para{
-  margin-bottom:5%;
+  padding: 10%;
 }
 
 
@@ -273,7 +283,6 @@ color: white;
   margin: 0 auto;
   position: relative;
   left:-5%;
-  margin-bottom:5%;
 
   /*background-color: orange;*/
 }
