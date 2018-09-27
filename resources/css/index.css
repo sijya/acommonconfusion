@@ -252,6 +252,7 @@ color: white;
 
 .introduction .franz, .introduction .kafka{
   transition: letter-spacing 2s ease-out, padding 2s ease-out;
+  color:black;
 }
 
 .introduction .franz:hover, .introduction .kafka:hover{
@@ -263,15 +264,7 @@ color: white;
   color:black;
 }
 
-.k, .f, .a{
-  transition: padding 2s ease-out;
 
-}
-
-.k:hover, .f:hover, .a:hover{
-  padding-left: 20px;
-  padding-right:20px;
-}
 
 /*section-two*/
 
@@ -403,6 +396,6 @@ font-style: normal;
 .goes{
   width:30%;
   text-align: left;
-  width:30%;
+  width:23%;
 }
 /**/
