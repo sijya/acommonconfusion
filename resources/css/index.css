@@ -175,7 +175,7 @@ main {
 
  p.title{
    color:white;
-   transition: letter-spacing 5s ease-out 100ms, color 3s ease;
+   transition: letter-spacing 3s ease-out 100ms, color 2s ease;
    width:100%;
 }
 
@@ -199,11 +199,11 @@ main {
   font-family:italic;
   font-style:italic;
   padding-top:30%;
-  transition: all 2s ease-out;
+  transition: all 1s ease;
 }
 
  p.author:hover{
-   color: white;
+   color: lightgrey;
 }
 
 /*introduction-acommonconfusion */
@@ -447,9 +447,20 @@ color:darkgrey;
   width:50%;
   background-color:  #CFD7E5;
   padding:30% 30% 30% 36%;
+  transition: all 1s ease;
 }
 /**/
 
 .goes:hover{
   background-color:lavender;
+}
+
+span.size{
+  color:lightgrey;
+  transition: all 2s ease;
+}
+
+span.size:hover{
+  color:white;
+  font-size: 2rem;
 }
